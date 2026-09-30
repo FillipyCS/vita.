@@ -258,6 +258,10 @@ class ProfileEditFragment : Fragment() {
         binding.btnSalvarMedidas.setOnClickListener {
             salvarNovasMedidas()
         }
+
+        binding.btnAlterarSenha.setOnClickListener {
+            findNavController().navigate(R.id.action_profileEditFragment_to_changePasswordFragment)
+        }
     }
 
     private fun obterEmailUsuarioLogado(): String {
